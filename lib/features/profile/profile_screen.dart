@@ -28,7 +28,7 @@ class ProfileScreen extends StatelessWidget {
             style: GoogleFonts.inter(
               color: AppColors.whiteColor,
               fontWeight: FontWeight.w600,
-              fontSize: 18.sp,
+              fontSize: 16,
             ),
           ),
           centerTitle: true,
@@ -44,9 +44,11 @@ class ProfileScreen extends StatelessWidget {
                   radius: 30,
                   child: ClipOval(
                       child: Image.network(
-                    AppStorage.photo!,
+                    AppStorage.photo ?? "",
                     errorBuilder: (context, error, stackTrace) {
-                      return CircleAvatar();
+                      return CircleAvatar(
+                        child: Icon(Icons.person),
+                      );
                     },
                   ))),
 
@@ -54,7 +56,7 @@ class ProfileScreen extends StatelessWidget {
 
               // User Name
               Text(
-                AppStorage.userName!,
+                AppStorage.userName ?? "Rushikesh",
                 style: GoogleFonts.inter(
                   fontSize: 18.sp,
                   fontWeight: FontWeight.bold,
@@ -66,7 +68,7 @@ class ProfileScreen extends StatelessWidget {
 
               // Email
               Text(
-                AppStorage.email!,
+                AppStorage.email ?? "Rushi@124gmail.com",
                 style: GoogleFonts.inter(
                   fontSize: 16.sp,
                   color: AppColors.lightGreyColor,
