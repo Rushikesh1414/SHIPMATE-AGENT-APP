@@ -219,8 +219,6 @@ class _OrderCheckoutScreenState extends State<OrderCheckoutScreen> {
                 // Progress tracker: step 0 of 3
                 ProgressTracker(totalSteps: 3, currentStep: 1, labels: ['Scan', 'Update', 'Dispatch']),
 
-                const SizedBox(height: 20),
-
                 /// Input fields
                 AppTextField(
                   controller: cnNumberController,

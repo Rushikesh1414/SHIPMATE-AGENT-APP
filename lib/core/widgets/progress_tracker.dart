@@ -62,32 +62,32 @@ class ProgressTracker extends StatelessWidget {
                   }
                 }),
               ),
-              const SizedBox(height: 28),
+              const SizedBox(height: 10),
             ],
           ),
         ),
-        Positioned(
-          top: 50,
-          left: 0,
-          right: 0,
-          child: Padding(
-            padding: const EdgeInsets.only(left: 12, right: 0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: List.generate(totalSteps, (i) {
-                return Text(
-                  labels[i],
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.inter(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w500,
-                    color: i <= currentStep ? AppColors.primaryColor : Colors.grey,
-                  ),
-                );
-              }),
-            ),
-          ),
-        ),
+        // Positioned(
+        //   top: 50,
+        //   left: 0,
+        //   right: 0,
+        //   child: Padding(
+        //     padding: const EdgeInsets.only(left: 12, right: 0),
+        //     child: Row(
+        //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //       children: List.generate(totalSteps, (i) {
+        //         return Text(
+        //           labels[i],
+        //           textAlign: TextAlign.center,
+        //           style: GoogleFonts.inter(
+        //             fontSize: 12,
+        //             fontWeight: FontWeight.w500,
+        //             color: i <= currentStep ? AppColors.primaryColor : Colors.grey,
+        //           ),
+        //         );
+        //       }),
+        //     ),
+        //   ),
+        // ),
       ],
     );
   }

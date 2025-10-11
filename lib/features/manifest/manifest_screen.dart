@@ -197,11 +197,10 @@ class _ManifestScreenState extends State<ManifestScreen> {
             children: [
               // Progress tracker: step 2 of 3
               ProgressTracker(totalSteps: 3, currentStep: 1, labels: ['Scan', 'Update', 'Dispatch']),
-              const SizedBox(height: 12),
 
               GestureDetector(
                 onTap: () {
-                  // Open scanner and fill form from result
+                  // Open scanner and fill form from results
                   _openScannerAndFill();
                 },
                 child: Container(

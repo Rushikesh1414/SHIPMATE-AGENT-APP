@@ -37,7 +37,6 @@ class _EntriesScreenState extends State<EntriesScreen> {
             children: [
               // Progress tracker: step 1 of 3
               ProgressTracker(totalSteps: 3, currentStep: 1, labels: ['Scan & Verify', 'Record Details', 'Generate Manifest']),
-              const SizedBox(height: 8),
 
               if (entries.isEmpty) ...[
                 Expanded(child: Center(child: Text('No entries yet', style: GoogleFonts.inter()))),
