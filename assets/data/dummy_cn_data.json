@@ -1,0 +1,29 @@
+[
+  {
+    "cn_number": "CN001",
+    "consigner_name": "Acme Supplies Pvt Ltd",
+    "consignee_name": "Global Retailers Inc",
+    "quantity": 10,
+    "weight": 25.5,
+    "origin_point": "Mumbai",
+    "destination_point": "Bengaluru"
+  },
+  {
+    "cn_number": "CN002",
+    "consigner_name": "Harbor Exports",
+    "consignee_name": "Oceanic Imports",
+    "quantity": 5,
+    "weight": 12.0,
+    "origin_point": "Kochi",
+    "destination_point": "Chennai"
+  },
+  {
+    "cn_number": "CN003",
+    "consigner_name": "Metro Distributors",
+    "consignee_name": "Sunrise Stores",
+    "quantity": 20,
+    "weight": 48.75,
+    "origin_point": "Delhi",
+    "destination_point": "Ahmedabad"
+  }
+]

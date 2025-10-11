@@ -3,7 +3,6 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shipmate_agent_app/core/theme/app_colors.dart';
 
-
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -24,7 +23,7 @@ class LoginScreen extends StatelessWidget {
         ),
         child: Center(
           child: SingleChildScrollView(
-            padding: const EdgeInsets.all(24.0),
+            padding: const EdgeInsets.only(left: 16, right: 16, top: 40),
             child: Card(
               elevation: 0,
               color: AppColors.whiteColor,
@@ -97,7 +96,7 @@ class LoginScreen extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          context.go('/sign_up_screen');
+                          context.go('/home_screen');
                         },
                         child: const Text(
                           "Login",

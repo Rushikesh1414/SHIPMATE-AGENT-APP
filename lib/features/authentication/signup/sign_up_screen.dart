@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 import 'package:shipmate_agent_app/core/theme/app_colors.dart';
 import 'package:sizer/sizer.dart';
@@ -164,7 +165,7 @@ class SignUpScreen extends StatelessWidget {
                           ),
                           GestureDetector(
                             onTap: () {
-                              Get.back(); // go back to login
+                              context.go('/login_screen');
                             },
                             child: Text(
                               "Log In",

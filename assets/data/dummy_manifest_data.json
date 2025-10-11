@@ -1,0 +1,28 @@
+[
+  {
+    "manifest_number": "MN-001",
+    "loading_type": "Full Load",
+    "vehicle_number": "MH12AB1234",
+    "from_station": "Pune",
+    "to_station": "Delhi",
+    "owner_broker_name": "Logistics Co",
+    "rate": 15000,
+    "total_hire_cost": 15000,
+    "payment_party": "Shipper",
+    "payment_type": "Prepaid",
+    "remarks": "Handle with care"
+  },
+  {
+    "manifest_number": "MN-002",
+    "loading_type": "Partial Load",
+    "vehicle_number": "MH14CD5678",
+    "from_station": "Mumbai",
+    "to_station": "Bengaluru",
+    "owner_broker_name": "Transit Ltd",
+    "rate": 8000,
+    "total_hire_cost": 8000,
+    "payment_party": "Consignee",
+    "payment_type": "COD",
+    "remarks": "Fragile"
+  }
+]
